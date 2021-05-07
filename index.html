@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planten</title>
+    <script src="https://cdn.jsdelivr.net/npm/superagent"></script>
+    <style>
+      #plantLijst {
+        display: flex;
+      }
+      .plant {
+        border: 1px solid blue;
+        padding: 10px;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="plantPost" >
+      <input name="naam" type="text" placeholder="Planten naam" />
+      <input name="leefgebied" type="text" placeholder="Leefgebied" />
+      <input name="prijs" type="number" placeholder="prijs" />
+      <input name="hoogte" type="number" placeholder="hoogte" />
+      <button type="submit">Verstuur</button>
+    </form>
+    <button onclick="fetchAllePlanten()">Klik hier!</button>
+    <div id="plantLijst"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
